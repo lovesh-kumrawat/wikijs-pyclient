@@ -3,6 +3,7 @@ from dataclasses import dataclass
 
 from .resources.pages import Page, PageSearchResult
 from .resources.users import User
+from .resources.groups import Group
 
 
 @dataclass(kw_only=True)
@@ -74,6 +75,12 @@ class CommentUpdateResponse:
 @dataclass(kw_only=True)
 class DefaultResponse:
     responseResult: Optional[ResponseStatus] = None
+
+
+@dataclass(kw_only=True)
+class GroupResponse:
+    responseResult: ResponseStatus
+    group: Optional[Group] = None
 
 
 @dataclass(kw_only=True)

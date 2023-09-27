@@ -2,6 +2,7 @@ from typing import Optional
 from dataclasses import dataclass
 
 from .resources.pages import Page, PageSearchResult
+from .resources.users import User
 
 
 @dataclass(kw_only=True)
@@ -107,6 +108,12 @@ class SystemImportUsersResponse:
     usersCount: Optional[int] = None
     groupsCount: Optional[int] = None
     failed: Optional[list[SystemImportUsersResponseFailed]] = None
+
+
+@dataclass(kw_only=True)
+class UserResponse:
+    responseResult: ResponseStatus
+    user: Optional[User] = None
 
 
 @dataclass(kw_only=True)

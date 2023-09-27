@@ -1,6 +1,8 @@
 from typing import Optional
 from dataclasses import dataclass
 
+from .resources.pages import Page, PageSearchResult
+
 
 @dataclass(kw_only=True)
 class Translation:
@@ -74,9 +76,22 @@ class DefaultResponse:
 
 
 @dataclass(kw_only=True)
+class PageResponse:
+    responseResult: ResponseStatus
+    page: Optional[Page] = None
+
+
+@dataclass(kw_only=True)
 class PageMigrationResponse:
     responseResult: ResponseStatus
     count: Optional[int] = None
+
+
+@dataclass(kw_only=True)
+class PageSearchResponse:
+    results: list[PageSearchResult]
+    suggestions: list[str]
+    totalHits: int
 
 
 @dataclass(kw_only=True)

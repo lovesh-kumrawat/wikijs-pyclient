@@ -6,11 +6,13 @@ from .methods.analytics import AnalyticsQuery, AnalyticsMutation
 from .methods.assets import AssetQuery, AssetMutation
 from .methods.authentication import AuthenticationQuery, AuthenticationMutation
 from .methods.comments import CommentQuery, CommentMutation
+from .methods.contribute import ContributeQuery
 from .methods.groups import GroupQuery, GroupMutation
 from .methods.logging import LoggingQuery, LoggingMutation
 from .methods.mail import MailQuery, MailMutation
 from .methods.pages import PageQuery, PageMutation
 from .methods.search import SearchQuery, SearchMutation
+from .methods.site import SiteQuery, SiteMutation
 from .methods.users import UserQuery, UserMutation
 
 
@@ -19,11 +21,13 @@ class WikiJS(
     AssetQuery, AssetMutation,
     AuthenticationQuery, AuthenticationMutation,
     CommentQuery, CommentMutation,
+    ContributeQuery,
     GroupQuery, GroupMutation,
     LoggingQuery, LoggingMutation,
     MailQuery, MailMutation,
     PageQuery, PageMutation,
     SearchQuery, SearchMutation,
+    SiteQuery, SiteMutation,
     UserQuery, UserMutation,
 ):
     

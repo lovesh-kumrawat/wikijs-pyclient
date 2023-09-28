@@ -2,9 +2,30 @@ import requests
 from typing import Any
 
 from .regulators import WikiJSExceptions
+from .methods.analytics import AnalyticsQuery, AnalyticsMutation
+from .methods.assets import AssetQuery, AssetMutation
+from .methods.authentication import AuthenticationQuery, AuthenticationMutation
+from .methods.comments import CommentQuery, CommentMutation
+from .methods.groups import GroupQuery, GroupMutation
+from .methods.logging import LoggingQuery, LoggingMutation
+from .methods.mail import MailQuery, MailMutation
+from .methods.pages import PageQuery, PageMutation
+from .methods.search import SearchQuery, SearchMutation
+from .methods.users import UserQuery, UserMutation
 
 
-class WikiJS:
+class WikiJS(
+    AnalyticsQuery, AnalyticsMutation,
+    AssetQuery, AssetMutation,
+    AuthenticationQuery, AuthenticationMutation,
+    CommentQuery, CommentMutation,
+    GroupQuery, GroupMutation,
+    LoggingQuery, LoggingMutation,
+    MailQuery, MailMutation,
+    PageQuery, PageMutation,
+    SearchQuery, SearchMutation,
+    UserQuery, UserMutation,
+):
     
     def __init__(self, url: str, token: str) -> None:
         

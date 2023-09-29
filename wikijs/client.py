@@ -8,6 +8,7 @@ from .methods.authentication import AuthenticationQuery, AuthenticationMutation
 from .methods.comments import CommentQuery, CommentMutation
 from .methods.contribute import ContributeQuery
 from .methods.groups import GroupQuery, GroupMutation
+from .methods.localization import LocalizationQuery, LocalizationMutation
 from .methods.logging import LoggingQuery, LoggingMutation
 from .methods.mail import MailQuery, MailMutation
 from .methods.pages import PageQuery, PageMutation
@@ -23,6 +24,7 @@ class WikiJS(
     CommentQuery, CommentMutation,
     ContributeQuery,
     GroupQuery, GroupMutation,
+    LocalizationQuery, LocalizationMutation,
     LoggingQuery, LoggingMutation,
     MailQuery, MailMutation,
     PageQuery, PageMutation,

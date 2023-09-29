@@ -16,6 +16,7 @@ from .methods.pages import PageQuery, PageMutation
 from .methods.rendering import RenderingQuery, RenderingMutation
 from .methods.search import SearchQuery, SearchMutation
 from .methods.site import SiteQuery, SiteMutation
+from .methods.storage import StorageQuery, StorageMutation
 from .methods.users import UserQuery, UserMutation
 
 
@@ -34,6 +35,7 @@ class WikiJS(
     RenderingQuery, RenderingMutation,
     SearchQuery, SearchMutation,
     SiteQuery, SiteMutation,
+    StorageQuery, StorageMutation,
     UserQuery, UserMutation,
 ):
     

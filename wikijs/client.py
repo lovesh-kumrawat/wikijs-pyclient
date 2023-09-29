@@ -11,6 +11,7 @@ from .methods.groups import GroupQuery, GroupMutation
 from .methods.localization import LocalizationQuery, LocalizationMutation
 from .methods.logging import LoggingQuery, LoggingMutation
 from .methods.mail import MailQuery, MailMutation
+from .methods.navigation import NavigationQuery, NavigationMutation
 from .methods.pages import PageQuery, PageMutation
 from .methods.search import SearchQuery, SearchMutation
 from .methods.site import SiteQuery, SiteMutation
@@ -27,6 +28,7 @@ class WikiJS(
     LocalizationQuery, LocalizationMutation,
     LoggingQuery, LoggingMutation,
     MailQuery, MailMutation,
+    NavigationQuery, NavigationMutation,
     PageQuery, PageMutation,
     SearchQuery, SearchMutation,
     SiteQuery, SiteMutation,

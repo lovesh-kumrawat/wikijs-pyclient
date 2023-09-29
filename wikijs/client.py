@@ -17,6 +17,7 @@ from .methods.rendering import RenderingQuery, RenderingMutation
 from .methods.search import SearchQuery, SearchMutation
 from .methods.site import SiteQuery, SiteMutation
 from .methods.storage import StorageQuery, StorageMutation
+from .methods.system import SystemQuery, SystemMutation
 from .methods.users import UserQuery, UserMutation
 
 
@@ -36,6 +37,7 @@ class WikiJS(
     SearchQuery, SearchMutation,
     SiteQuery, SiteMutation,
     StorageQuery, StorageMutation,
+    SystemQuery, SystemMutation,
     UserQuery, UserMutation,
 ):
     

@@ -13,6 +13,7 @@ from .methods.logging import LoggingQuery, LoggingMutation
 from .methods.mail import MailQuery, MailMutation
 from .methods.navigation import NavigationQuery, NavigationMutation
 from .methods.pages import PageQuery, PageMutation
+from .methods.rendering import RenderingQuery, RenderingMutation
 from .methods.search import SearchQuery, SearchMutation
 from .methods.site import SiteQuery, SiteMutation
 from .methods.users import UserQuery, UserMutation
@@ -30,6 +31,7 @@ class WikiJS(
     MailQuery, MailMutation,
     NavigationQuery, NavigationMutation,
     PageQuery, PageMutation,
+    RenderingQuery, RenderingMutation,
     SearchQuery, SearchMutation,
     SiteQuery, SiteMutation,
     UserQuery, UserMutation,

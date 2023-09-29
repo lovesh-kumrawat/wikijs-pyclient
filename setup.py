@@ -14,7 +14,7 @@ if sys.version_info < __py_version__:
 
 # Package metadata
 __project__ = "wikijs-pyclient"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __license__ = "MIT License"
 __name__ = "Lovesh Kumrawat"
 __email__ = "kumrawat.lovesh@gmail.com"
@@ -37,6 +37,10 @@ __keywords__ = [
     "wikijs-api-wrapper",
     "wikijs-graphql-api",
     "wikijs-graphql-api-automation",
+]
+
+__dependencies__ = [
+    "requests",
 ]
 
 with open("README.md", "r") as fh:
@@ -62,4 +66,5 @@ setuptools.setup(
     keywords                      = __keywords__,
     packages                      = setuptools.find_packages(),
     python_requires               = f">={__py_version_str__}",
+    install_requires              = __dependencies__,
 )

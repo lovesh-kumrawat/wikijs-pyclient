@@ -4,9 +4,14 @@ A python client for an easy interaction with the WikiJS graphql API, through aut
 
 - **[Documentation](https://github.com/lovesh-kumrawat/wikijs-pyclient/wiki/Documentation)**
 - **[Source Code](https://github.com/lovesh-kumrawat/wikijs-pyclient)**
+- **[Pypi Package](https://pypi.org/project/wikijs-pyclient/)**
 - **[Bug Reports](https://github.com/lovesh-kumrawat/wikijs-pyclient/issues)**
 
 ---
+## Installation `python 3.10+`
+
+    pip install wikijs-pyclient
+
 ## WikiJS client setup
 
 ```python

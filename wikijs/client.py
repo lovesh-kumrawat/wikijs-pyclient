@@ -18,6 +18,7 @@ from .methods.search import SearchQuery, SearchMutation
 from .methods.site import SiteQuery, SiteMutation
 from .methods.storage import StorageQuery, StorageMutation
 from .methods.system import SystemQuery, SystemMutation
+from .methods.theming import ThemingQuery, ThemingMutation
 from .methods.users import UserQuery, UserMutation
 
 
@@ -38,6 +39,7 @@ class WikiJS(
     SiteQuery, SiteMutation,
     StorageQuery, StorageMutation,
     SystemQuery, SystemMutation,
+    ThemingQuery, ThemingMutation,
     UserQuery, UserMutation,
 ):
     
